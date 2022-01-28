@@ -45,7 +45,6 @@ class Parent{
         driver.findElement(By.id("candidateSearch_toDate")).sendKeys(dat);
         driver.findElement(By.id("btnSrch")).click();
     }
-
     void adduser() {
         driver.findElement(By.id("menu_pim_viewPimModule")).click();
         driver.findElement(By.id("btnAdd")).click();
@@ -65,7 +64,6 @@ class Parent{
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.findElement(By.xpath("//*[@id=\"btnDelete\"]")).click();
     }
-
     void edit() {
         driver.findElement(By.id("menu_admin_viewAdminModule")).click();
         driver.findElement(By.id("searchSystemUser_userName")).sendKeys(txtUsername);
@@ -77,7 +75,6 @@ class Parent{
         driver.findElement(By.name("btnSave")).click();
         driver.findElement(By.id("btnSave")).click();
     }
-
     void delete() {
         driver.findElement(By.id("menu_admin_viewAdminModule")).click();
         driver.findElement(By.id("searchSystemUser_userName")).sendKeys(fullName);
@@ -86,7 +83,6 @@ class Parent{
         driver.findElement(By.id("btnDelete")).click();
         driver.findElement(By.id("dialogDeleteBtn")).click();
     }
-
     void logout() {
         driver.findElement(By.id("welcome")).click();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
